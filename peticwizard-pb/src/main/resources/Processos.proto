@@ -1,0 +1,39 @@
+package MobiPETIC;
+
+option java_package = "br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC";
+option java_outer_classname = "ProcessosProtos";
+
+message Processos {
+	repeated Processo processo = 1;
+}
+
+enum Maturidade {
+	INDEFINIDA = 0;
+	INEXISTENTE = 1;
+	MINIMO = 2;
+	SEGURO = 3;
+	SATISFATORIO = 4;
+	ESTADOIDEAL = 5;
+}
+
+message Processo {
+	required string id = 1;
+	required string nome = 2;
+	optional bool e_prioritario = 3;
+	optional bool prioridade_def = 4;
+	optional string descricao = 5;
+	optional string entradas = 6;
+	optional string saidas = 7;
+	optional string responsavel = 8;
+	optional string stakeholders = 9;
+	optional int64 modificacao = 10;
+	optional string subarea_id = 11;
+	optional Questionario questionario = 12;
+}
+
+message Questionario {
+	optional int64 modificacao = 1;
+	optional string editor = 2;
+	optional Maturidade maturidade = 3;
+	optional Maturidade maturidade_ant = 4;
+}

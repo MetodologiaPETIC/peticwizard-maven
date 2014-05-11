@@ -1,0 +1,4 @@
+activeProfiles=javax.ejb,javax.persistence,javax.ws
+eclipse.preferences.version=1
+resolveWorkspaceProjects=true
+version=1

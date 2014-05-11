@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.jboss.ide.eclipse.as.core.singledeployable.deployableList=peticwizard-web/target/peticwizard.war\npeticwizard-services/target/peticwizard-rest.war\n
