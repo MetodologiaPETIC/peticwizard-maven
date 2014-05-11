@@ -1,0 +1,22 @@
+package MobiPETIC;
+
+option java_package = "br.ufs.dcomp.gpes.peticwizard.presentation.MobiPETIC";
+option java_outer_classname = "AcoesProtos";
+
+message Acoes {
+	repeated Acao acao = 1;
+}
+
+message Acao {
+	required string id = 1;
+	required string nome = 2;
+	optional string responsavel = 3;
+	optional int64 data_inicio = 4;
+	optional int64 data_fim = 5;
+	optional int32 custo = 6;
+	optional int32 esforco = 7;
+	optional string criador = 8;
+	optional int64 data_criacao = 9;
+	optional string processo_id = 10;
+	optional bool adotada = 11;
+}
